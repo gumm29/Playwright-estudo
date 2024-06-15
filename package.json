@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test --ui",
+    "headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "firefox": "npx playwright test --headed --project firefox",
+    "specifcTest": "npx playwright test page.spec.js --headed",
+    "containsNameFileTest": "npx playwright test page --headed",
+    "nameTest": "npx playwright test -g 'has title' --headed",
+    "home": "npx playwright test home --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2"
+  }
+}
